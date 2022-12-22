@@ -1,3 +1,5 @@
-.App {
+.app {
   text-align: center;
+  background-color: darkslategrey;
+  height: 100%;
 }

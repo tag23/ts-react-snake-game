@@ -1,3 +1,5 @@
+import { Point } from "./types";
+
 export class LinkedNode<T> {
     data: T;
     next: LinkedNode<T> | null;
@@ -159,3 +161,7 @@ export class LinkedList<T> {
         return false;
     }
 }
+
+export const generateRandomPoint = (xRange: number, yRange: number): Point => {
+    return {x: Math.floor(Math.random() * xRange), y: Math.floor(Math.random() * yRange)};
+};

@@ -11,9 +11,21 @@
 .grid-cell {
     width: 40px;
     height: 40px;
-    border: 1px solid black;
+    border: 1px solid azure;
 }
 
-.grid-cell.filled {
-    background-color: aqua;
+.grid-cell.snake-head-filled {
+    background-color: greenyellow;
+}
+
+.grid-cell.snake-filled {
+    background-color: darkviolet;
+}
+
+.grid-cell.food-filled {
+    background-color: blue;
+}
+
+.grid-cell.wall-filled {
+    background-color: dimgray;
 }
