@@ -154,6 +154,22 @@ export class LinkedList<T> {
             if (func(currentNode?.data)) {
                 return true;
             }
+            
+            currentNode = currentNode?.next || null;
+        }
+
+        return false;
+    }
+
+    someExceptHead(func: (item: T) => boolean) {
+        let currentNode: LinkedNode<T> | null = this.head;
+        
+        while (currentNode) {
+            if (currentNode !== this.head) {
+                if (func(currentNode?.data)) {
+                    return true;
+                }
+            }
 
             currentNode = currentNode?.next || null;
         }

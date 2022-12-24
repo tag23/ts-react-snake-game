@@ -5,6 +5,13 @@ export interface Point {
     y: number;
 };
 
+export enum GameStatuses {
+    PLAY,
+    PAUSE,
+    LOSE,
+    WIN
+};
+
 export type VectorDirection = -1|0|1;
 
 export type GameConfiguration = {
@@ -20,5 +27,6 @@ export type GameConfiguration = {
 export type GameState = {
     snakeList: LinkedList<Point>,
     wallList: Array<Point>,
-    foodPoint: Point | null
+    foodPoint: Point | null,
+    gameStatus: GameStatuses
 };

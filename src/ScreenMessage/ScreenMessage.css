@@ -1,0 +1,27 @@
+.screen-message {
+    position: absolute;
+}
+
+.screen-message-text {
+    font-size: 28pt;
+    font-weight: bold;
+    padding: 14pt;
+    background: darkslategray;
+    border: 14px solid gainsboro;
+    border-radius: 50px;
+}
+
+.screen-message-text.lose {
+    color: red;
+    border-color: red;
+}
+
+.screen-message-text.win {
+    color: greenyellow;
+    border-color: greenyellow;
+}
+
+.screen-message-text.pause {
+    color: gainsboro;
+    border-color: gainsboro;
+}

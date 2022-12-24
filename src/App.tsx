@@ -6,8 +6,8 @@ import Game from './Game';
 const App = () => {
   return <Game
     config={{
-      gridWidth: 3,
-      gridHeight: 3,
+      gridWidth: 8,
+      gridHeight: 8,
   
       defaultSnakeX: 1,
       defaultSnakeY: 0,
